@@ -11,6 +11,8 @@ fetch(uri)
 })
 .then(data => {     
     tarjeta.innerHTML = renderizarDatosUsuario(data.results[0]);
+    tarjeta.style.textAlign = "center";
+    tarjeta.style.paddingTop= "10px";
 });
 }
     /* -------------------------------- CONSIGNA 1 -------------------------------- */
@@ -21,8 +23,8 @@ fetch(uri)
 function renderizarDatosUsuario(datos) {
 let templateDatosPersonales = `
 <img src="${datos.picture.large}" alt="">
-<p>Nombre: ${datos.name.title} ${datos.name.first} ${datos.name.last}</p>
-<p>Email: ${datos.email}</p>
+<p><strong>Nombre: </strong>${datos.name.title} ${datos.name.first} ${datos.name.last}</p>
+<p><strong>Email: </strong>${datos.email}</p>
 `
 return templateDatosPersonales;
 }

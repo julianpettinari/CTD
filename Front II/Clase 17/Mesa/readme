@@ -1,0 +1,6 @@
+Tenemos un Fetch donde le pasa directamente la url a consumir. (no tiene variable)
+lo parsea de json a javascript y en el 2do then lo usa
+
+
+mostrar foto, nombre completo y mail e insertarlo en el html.
+
